@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/userimagecardview"
+        android:layout_width="133dp"
+        android:layout_height="133dp"
+        android:layout_below="@+id/justtextview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="#2ec62e"
+        app:cardCornerRadius="66.5dp"
+        app:cardElevation="6dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            app:cardBackgroundColor="#585858"
+            app:cardCornerRadius="65dp">
+
+            <ImageView
+                android:id="@+id/imageicon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/image"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/selectimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="3dp"/>
+
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/justtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Choose Image For Profile"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/uploaderrormessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userimagecardview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Fail To Upload"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textColor="#ff0000"
+        android:visibility="invisible"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uploaderrormessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        app:cardBackgroundColor="#585858"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="6dp"
+        android:id="@+id/cardView4">
+
+        <Button
+            android:id="@+id/uploadphoto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonbackground"
+            android:text="upload photo"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cardView4"
+        android:layout_alignStart="@+id/cardView4"
+        android:layout_below="@+id/cardView4"
+        android:layout_marginTop="36dp"
+        app:cardBackgroundColor="#585858"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="6dp">
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonbackground"
+            android:text="skip"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

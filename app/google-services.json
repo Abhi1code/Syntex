@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "203179840254",
+    "firebase_url": "https://syntex-3e624.firebaseio.com",
+    "project_id": "syntex-3e624",
+    "storage_bucket": "syntex-3e624.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203179840254:android:7e182440156223f5",
+        "android_client_info": {
+          "package_name": "com.matrixfrats.syntex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203179840254-fqo9qduooda5oav69ileav8vi7bs9omt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.matrixfrats.syntex",
+            "certificate_hash": "e0fe784030a957319e3e18db294705cfced06399"
+          }
+        },
+        {
+          "client_id": "203179840254-dhdess73t6rk2lh397a0m0o2bug9km5u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaYD9tkt1yxcjbRywRjthffoBdOrt5uis"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203179840254-dhdess73t6rk2lh397a0m0o2bug9km5u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

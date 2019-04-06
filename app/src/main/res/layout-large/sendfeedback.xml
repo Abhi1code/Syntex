@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/feedbackbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:inputType="textMultiLine"
+        android:hint="Write your feedback"
+        android:textColorHint="#585858"
+        android:layout_margin="40dp"/>
+
+    <Button
+        android:id="@+id/sendfeedback"
+        android:layout_width="270dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:layout_height="100dp"
+        android:text="SEND"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:background="@drawable/buttonbackground"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#A0522D"
+
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#FFF">
+
+        <EditText
+            android:id="@+id/searchbar"
+            android:layout_width="560dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="41dp"
+            android:layout_marginLeft="41dp"
+            android:background="@drawable/buttonsearchbackground"
+            android:ems="10"
+            android:hint="Search here..."
+            android:inputType="textPersonName"
+            android:paddingLeft="30dp"
+            android:textColorHint="#000"
+            android:textSize="47sp"/>
+
+        <Button
+
+            android:id="@+id/searchbutton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="66dp"
+            android:layout_marginRight="66dp"
+            android:background="@drawable/ic_action_name"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/searchrecycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A9A899"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+
+</LinearLayout>

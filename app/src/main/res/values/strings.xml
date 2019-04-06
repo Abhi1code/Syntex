@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Friend Locator</string>
+    <string-array name="step">
+        <item>Loading\nMap</item>
+        <item>Tracing requested\nlocation</item>
+        <item>Tracing your\nlocation</item>
+        <item>Plotting\nlocations</item>
+    </string-array>
+</resources>

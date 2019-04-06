@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="#A9A9A9"
+        android:id="@+id/recycleviewinrequestsended"/>
+
+    <RelativeLayout
+        android:id="@+id/refreshbuttonandtextview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0FFFF"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/refreshbuttoninrequestreceived"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/ic_autorenew_black_24dp"/>
+
+        <TextView
+            android:id="@+id/errormessageinrequestreceived"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/refreshbuttoninrequestreceived"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="Connection Error"
+            android:textColor="#B22222"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</FrameLayout>

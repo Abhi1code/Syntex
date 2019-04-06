@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialogmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:text="Make sure that  name is using this app and have
+                active internet connection or otherwise location of name would not be accessed."
+        android:gravity="center"
+
+     />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialogmessage"
+        android:layout_alignStart="@+id/dialogmessage"
+        android:layout_below="@+id/dialogmessage"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:text="Don't show again"
+        android:textSize="15sp"
+        android:checked="false"/>
+
+</RelativeLayout>

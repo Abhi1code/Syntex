@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/mappage"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Mapfragment">
+
+    <LinearLayout
+        android:id="@+id/maplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/mapfragment"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/errorlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#333333"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <com.shuhart.stepview.StepView
+                    android:id="@+id/stepview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="20dp"
+                    app:sv_animationDuration="500"
+                    app:sv_animationType="All"
+                    app:sv_stepLineWidth="4dp"
+                    app:sv_stepPadding="20dp"
+                    app:sv_steps="@array/step"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="15dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="13dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/cardtextview1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:gravity="center"
+                            android:text="Loading..."
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="13dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/cardtextview2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:gravity="center"
+                            android:text="Trying to \nTrace  Location"
+                            android:textColor="#000000"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="13dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/cardtextview3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:gravity="center"
+                            android:text="Trying to \naccess your location"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="13dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/cardtextview4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:gravity="center"
+                            android:text="Plotting\n all locations"
+                            android:textColor="#000000"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/typeofmap"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:alpha="0.8"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/mapicon"
+        android:paddingLeft="10dp"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#ff0000"
+        app:cardCornerRadius="30.5dp"
+        app:cardElevation="6dp"
+        android:id="@+id/usercardbase"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/userimagecardview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            app:cardBackgroundColor="#ff0000"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:id="@+id/usernameincard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#ffffff"
+                android:textSize="35sp"
+                android:textStyle="bold"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userimageincard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="#00ff00"
+        app:cardCornerRadius="30.5dp"
+        app:cardElevation="6dp"
+        android:id="@+id/locatorcardbase"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/locatorimagecardview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            app:cardBackgroundColor="#ff0000"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:id="@+id/locatornameincard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#ffffff"
+                android:textSize="35dp"
+                android:textStyle="bold"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/locatorimageincard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+</FrameLayout>
